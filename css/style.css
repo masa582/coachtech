@@ -104,28 +104,144 @@ input, select {
     vertical-align:middle;
 }
 
-/* .parent {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  background: black;
-  color: white;
-  width: 100px;
-  height: 100px;
-} */
-
-.parent {
-  position: relative;
-  background: black;
-  color:#cccccc;
-  width: 100px;
-  height: 100px;
+.header{
+display: flex;
+justify-content: space-between;
+color: #ccc;
+background-color: #000;
+align-items: center;
 }
 
-.child {
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  /* transform: translate(-50%, -50%); 基準位置を左上から真ん中にする 
+.nav-item{
+    align-items: baseline;
+    color: #ccc;
+
+}
+
+.item{
+    display:flex;
+    align-items: center;
+    padding-top: 20px;
+    text-decoration: none;
+}
 
 
+
+
+.nav-item{
+    display:flex;
+ justify-content: center;
+ width: 100%;
+ /* padding: 0 10px; */
+ font-size: 10px;
+ list-style: none;
+ margin-bottom: 30px;
+}
+
+.item:not(:last-child){
+    margin-right: 30px;
+    
+    
+}
+
+table{
+    /* display: inline-block; */
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+
+table th,
+table td{
+    border-bottom:1px #ccc solid;
+    padding: 10px 40px 10px;
+}
+
+table th{
+    padding: 10px 0;
+    font-weight:bold;
+margin-left: 0;
+/* margin-right: auto; */
+text-align: left;
+}
+
+table th{
+    text-align: center;
+    padding: 20px 0;
+    border-right: solid #ddd 1px;
+    border-left: solid #ddd 1px;
+}
+
+#contact{
+    margin: 40px;
+    text-align: center;
+      background: rgb(241, 241, 241);
+}
+
+.form{
+    width:70%;
+    margin: 0 auto;
+}
+label{
+    display: inline-block;
+    width: 30%;
+}
+
+
+.button-submit{
+/* text-align: center; */
+
+}
+
+.button{
+background-color: #000;
+color: #fff;
+padding: 10px 30px;
+margin: 30px 0;
+}
+
+/* .button-submit { */
+  /* text-align: center; */
+/* } */
+/*  */
+/* .button { */
+  /* padding: 10px 30px; */
+  /* background-color: #000; */
+  /* color: #fff; */
+  /* margin: 30px 0; */
+/* } */
+/*  */
+
+
+
+
+
+
+.footer{
+/* display: flex; */
+/* align-items: center; */
+  width: 100%;
+height: 150px;
+
+color: white;
+margin: 0 auto;
+text-align: center;
+}
+
+
+.footer-title{
+
+ font-size: 15px;
+font-weight: bold;
+text-align: center;
+padding: 20px 0;
+}
+
+.copyright{
+ color: #000;   
+    font-size: 8px;
+}
