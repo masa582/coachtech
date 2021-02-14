@@ -30,6 +30,7 @@ time, mark, audio, video {
     background:transparent;
 }
 
+
 body {
     line-height:1;
 }
@@ -155,14 +156,17 @@ height: 600px;
 .estra p{ 
      position: absolute;
      font-weight: bold;
-     font-size:100px;
+     font-size: 100px;
      top:50%;
      left:50%;
        transform: translate(-50%, -50%);
      color: #ccc;
      font-style: italic;
      line-height: 1;
-
+    /* background-image: linear-gradient(to right,transparent 50%,#fff134 50%);
+    transition: all 1.5s ease;
+    background-repeat: repeat-x;
+    background-position: 4em; */
  }  
 
 .main_visual{
