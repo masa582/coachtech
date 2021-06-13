@@ -109,24 +109,39 @@ input, select {
     margin-left:50px;
 }
 
-.header{
+.header1{
     background-color:rgb(231, 216, 216);
-   
+   font-size: 28px;
+   margin: 10px 0px;
 }
-.list-info{
-    /* display: block; */
-background-color:rgb(197, 197, 195);
-margin-left:20px;
-font-size:12px;
+
+.header2{
+        background-color:rgb(229, 231, 216);
+           font-size: 22px ;
+              margin: 10px 0px;
+}
+
+.about-sentence{
+       background-color:rgb(216, 231, 224);
+              margin: 10px 0px;
+              font-size: 16px;
+}
+
+.blog{
+           background-color:rgb(216, 223, 231);
+              margin: 10px 0px;
+                 font-size: 22px;
 }
 
 .img-sentence{
     margin: 10px 0px;
+    font-weight: bold;
 }
 
-.gaiyou{
-    margin: 20px 0px 5px;
-    font-size: 20px;
+.company-summary{
+    margin: 20px 0px;
+    font-size: 25px;
+    background-color:rgb(206, 213, 228);
 }
 
 table{
@@ -137,18 +152,50 @@ border-spacing: 20px 5px;
 }
 
 .form{
-padding: 10px;
-font-size: 12px;
-background-color:rgb(237, 231, 238);
-}
-input{
-    font-size: 70%;
-}
-.btn_area{
-width: 30px;
-margin: 5px;
+      padding: 20px 0px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color:rgb(237, 231, 238);
+      width: 600px;
+      height: 400px;
 }
 
-footer{
-    font-size: 5px;
+.name{
+      margin: 20px 40px;
+}
+
+.email-1{
+      margin: 10px 5px;
+        /* background-color:rgb(166, 163, 167); */
+}
+.email-2{
+      margin: 10px 10px;
+}
+
+.schedule{
+      margin: 10px 40px;
+}
+
+.vertical{
+      vertical-align: middle; 
+      background-color:rgb(152, 137, 155);
+}
+
+.vertical1{
+      line-height: 200px;
+      margin: 10px 40px;
+}
+
+.vertical2{
+    vertical-align: middle; 
+}
+
+input{
+    /* font-size: 70%; */
+    font-weight: bold;
+}
+.btn_area{
+    width: 100px;
+    margin: 5px;
+    background-color:rgb(228, 187, 189);
 }

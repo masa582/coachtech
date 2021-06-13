@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,94 +9,73 @@
 </head>
 
 <body>
-    <div class="container">
-      <!-- <div class="sidebar"> -->
-  <header class=header>
-  
-<div class="header-left">
-<h1>株式会社TECH</h1>
-</div>
-  </header >
-<main>
- <div class="list-info">
-  <ul>
-    <li><a href="#">ホーム</a></li>
-    <li><a href="#">企業情報</a></li>
-    <li><a href="#">会社概要</a></li>
-    <li><a href="#">よくある質問</a></li>
-    <li><a href="#">お問い合わせ</a></li>
-　 </ul>
-</div>
-  <div class="picture">
-    <img src="img\mv.png" alt="会社の概要" width=800px height="400px">
-  <div class="img-sentence">
-    <p>最新のテクノロジーで社会課題を解決</p>
-  </div>
+  <div class="container">
+    <header class=header>
+      <div>
+        <h1 class="header1">キャッチコピー</h1>
+      </div>
+      <div>
+        <h2 class="header2">About</h2>
+      </div>
+      <div class="about-sentence">
+        <p>COACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>
+          プログラミング未経験の方でも、<span style="font-weight: bold;">「独自の学習ノウハウ」</span>でフリーランスエンジニアを目指すことができます。</p>
+      </div>
+        <h2 class="blog">ブログ</h2>
+    </header>
+    <main>
+      <div>
+        <img src="img/blog__eyecatch1.jpg" alt="会議の画像" width="1600" height="1000">
+      </div>
+      <div class="img-sentence">
+        <p>コーチテックブログのタイトルがここには入ります。</p>
+      </div>
+      <div>
+        <img src="img/blog__eyecatch2.jpg" alt="女性とPC画像" width="1600" height="1000">
+      </div>
+      <div class="img-sentence">
+        <p>コーチテックブログのタイトルがここには入ります。</p>
+      </div>
+      <div>
+        <img src="img/blog__eyecatch3.jpg" alt="スピーチ" width="1600" height="1000">
+      </div>
+      <div class="img-sentence">
+        <p>コーチテックブログのタイトルがここには入ります。</p>
+      </div>
 
-<div class="gaiyou">
-  <h2>会社概要</h2>
-</div>
-<table class="th">
-  <tr>
-    <th>会社名</th>
-    <td>株式会社TECH</td>
-  </tr>
-  <tr>
-    <th>代表者</th>
-    <td>山田 太郎</td>
-  </tr>
-  <tr>
-    <th>所在地</th>
-    <td>東京都渋谷区神宮前</td>
-  </tr>
-  <tr>
-    <th>設立</th>
-    <td>2019/07/17</td>
-  </tr>
-  <tr>
-    <th>従業員数</th>
-    <td>100人</td>
-  </tr>
-  <tr>
-    <th>資本金</th>
-    <td>1000万円</td>
-  </tr>
-</table>
-
-<div class="form">
-  <section>
-    <h2>お問い合わせ</h2>
-  <form action="#" method="get"></form>
-  <div>
-    <label for="company">会社名</label>
-    <input type="text" name="company" id="company">
+      <section>
+        <div class="company-summary">
+          <h2>問い合わせ</h2>
+        </div>
+        <form class="form" action="#" method="post">      
+          <div>
+            <label class="name" for="name">名前</label>
+            <input  type="text" name="name" id="name">
+          </div>
+          <div>
+            <label class="email-1" for="email">メールアドレス</label>
+            <input class="email-2" type="text" name="company" id="email">
+          </div>
+          <div>
+            <label class="schedule" >用件</label>
+            <select name="example2">
+              <option value="サンプル1" selected>広告掲載について</option>
+              <option value="サンプル2">選択肢のサンプル2</option>
+              <option value="サンプル3" >選択肢のサンプル3</option>
+            </select>
+          </div>
+          <div class="vertica1">
+            <label class="vertical1" for="text">内容</label>
+            <textarea class="vertical2" id="text" name="inquiry" cols="30" rows="14"></textarea>
+          </div>
+          <div class="btn_area">
+            <input type="submit" name="btn_confirm1" value="削除" style="width :40px;">
+            <input type="submit" name="btn_confirm2" value="送信" style="width :40px;">
+          </div>
+        </form>
+      </section>
+    </main>
   </div>
-
-  <div>
-    <label for="name">お名前</label>
-    <input type="text" name="name" id="name">
-  </div>
-  <div>
-    <label for="email">メールアドレス</label>
-    <input type="text" name="company" id="email">
-  </div>
-  <div>
-    <label for="text" name="inquiry" id="inquiry">お問い合わせ内容</label>
-    <textarea name="inquiry" id="inquiry" cols="50" rows="7"></textarea>
-  </div>
-  <div class="btn_area">
-    <input type="submit" name="btn_confirm" value="お申し込み" style="width :80px;">
-  </div>
-</section>
-
-<footer>
-  <small>&copy; 2020 TECH,inc.</small>
-</footer>
-
-
-</main>
-</div>
-</div>
 </body>
 
 </html>
