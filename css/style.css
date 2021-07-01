@@ -1,6 +1,4 @@
-
 @charset "UTF-8";
-
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -9,72 +7,60 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
-
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /* change colours to suit your needs */
+
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
+
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
@@ -82,120 +68,132 @@ del {
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
+
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
-.container{
-    margin-left:50px;
+/* ここから  開始　　　　　ここから  開始　　　　　　　　　　　*/
+
+.header {
+    height: 40px;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
 }
 
-.header1{
-    background-color:rgb(231, 216, 216);
-   font-size: 28px;
-   margin: 10px 0px;
 }
 
-.header2{
-        background-color:rgb(229, 231, 216);
-           font-size: 22px ;
-              margin: 10px 0px;
+.header-wrap {
+    height: 100px;
 }
 
-.about-sentence{
-       background-color:rgb(216, 231, 224);
-              margin: 10px 0px;
-              font-size: 16px;
+.logo {
+    /* margin: 10px; */
+    height: 30px;
+    width: 150px;
 }
 
-.blog{
-           background-color:rgb(216, 223, 231);
-              margin: 10px 0px;
-                 font-size: 22px;
+.header-nav ul {
+    display: flex;
 }
 
-.img-sentence{
-    margin: 10px 0px;
+.header-nav li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.header-nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ここからFIrstview の範囲 */
+
+.firstview {
+    position: relative;
+    height: 800px;
+    background-color: saddlebrown;
+    margin: 0 0 100px 0;
+}
+
+.firsview_parent {
+    height: 1000px;
+}
+
+.img_1 {
+    position: absolute;
+    display: block;
+    right: 0px;
+    width: 75%;
+    height: 600px;
+    /* height: auto; */
+    margin: 0 0 0 auto;
+    z-index: 2;
+}
+
+.firstview_message {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 20px;
+    /* z-index: 5; */
+}
+
+.absolute_1 {
+    position: absolute;
+    /* width: 700px; */
+    height: 300px;
+    width: auto;
+    background-color: rgb(228, 208, 225);
+    top: 100px;
+    left: 200px;
+    z-index: 3;
+}
+
+.absolute {
+    font-size: 50px;
+    color: rgb(179, 22, 103);
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Short Stack', cursive;
+}
+
+.message {
+    height: auto;
+    color: rgb(179, 22, 103);
     font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-.company-summary{
-    margin: 20px 0px;
-    font-size: 25px;
-    background-color:rgb(206, 213, 228);
+.sentence {
+    color: rgb(0, 150, 159);
 }
 
-table{
-background-color:rgb(242, 253, 252);
-border-spacing: 20px 5px;
-  border-collapse: separate;
-  font-size: 12px;
+.message_2{
+    line-height: 30px;
 }
 
-.form{
-      padding: 20px 0px;
-      font-size: 12px;
-      font-weight: bold;
-      background-color:rgb(237, 231, 238);
-      width: 600px;
-      height: 400px;
-}
-
-.name{
-      margin: 20px 40px;
-}
-
-.email-1{
-      margin: 10px 5px;
-        /* background-color:rgb(166, 163, 167); */
-}
-.email-2{
-      margin: 10px 10px;
-}
-
-.schedule{
-      margin: 10px 40px;
-}
-
-.vertical{
-      vertical-align: middle; 
-      background-color:rgb(152, 137, 155);
-}
-
-.vertical1{
-      line-height: 200px;
-      margin: 10px 40px;
-}
-
-.vertical2{
-    vertical-align: middle; 
-}
-
-input{
-    /* font-size: 70%; */
-    font-weight: bold;
-}
-.btn_area{
-    width: 100px;
-    margin: 5px;
-    background-color:rgb(228, 187, 189);
-}
+/* ここまでがFIrstview の範囲 */
