@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -7,7 +8,75 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,7 +90,17 @@ body {
     line-height: 1;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -29,11 +108,15 @@ nav ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -46,6 +129,7 @@ a {
     background: transparent;
 }
 
+
 /* change colours to suit your needs */
 
 ins {
@@ -53,6 +137,7 @@ ins {
     color: #000;
     text-decoration: none;
 }
+
 
 /* change colours to suit your needs */
 
@@ -67,7 +152,8 @@ del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
     border-bottom: 1px dotted;
     cursor: help;
 }
@@ -76,6 +162,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 
 /* change border colour to suit your needs */
 
@@ -88,9 +175,11 @@ hr {
     padding: 0;
 }
 
-input, select {
+input,
+select {
     vertical-align: middle;
 }
+
 
 /* ここから  開始　　　　　ここから  開始　　　　　　　　　　　*/
 
@@ -103,45 +192,39 @@ input, select {
     margin: 10px 20px;
 }
 
-}
 
+}
 .header-wrap {
     height: 100px;
 }
-
 .logo {
     /* margin: 10px; */
+    
     height: 30px;
     width: 150px;
 }
-
 .header-nav ul {
     display: flex;
 }
-
 .header-nav li {
     margin-right: 20px;
     font-size: 16px;
 }
-
 .header-nav a {
     color: #000;
     text-decoration: none;
 }
 
 /* ここからFIrstview の範囲 */
-
 .firstview {
     position: relative;
     height: 800px;
     background-color: saddlebrown;
     margin: 0 0 100px 0;
 }
-
 .firsview_parent {
     height: 1000px;
 }
-
 .img_1 {
     position: absolute;
     display: block;
@@ -149,10 +232,10 @@ input, select {
     width: 75%;
     height: 600px;
     /* height: auto; */
+    
     margin: 0 0 0 auto;
     z-index: 2;
 }
-
 .firstview_message {
     display: block;
     position: absolute;
@@ -161,10 +244,10 @@ input, select {
     font-size: 20px;
     /* z-index: 5; */
 }
-
 .absolute_1 {
     position: absolute;
     /* width: 700px; */
+    
     height: 300px;
     width: auto;
     background-color: rgb(228, 208, 225);
@@ -172,14 +255,13 @@ input, select {
     left: 200px;
     z-index: 3;
 }
-
 .absolute {
     font-size: 50px;
     color: rgb(179, 22, 103);
     /* font-family: 'Quicksand', sans-serif; */
+    
     font-family: 'Short Stack', cursive;
 }
-
 .message {
     height: auto;
     color: rgb(179, 22, 103);
@@ -187,13 +269,42 @@ input, select {
     font-size: 20px;
     line-height: 30px;
 }
-
 .sentence {
     color: rgb(0, 150, 159);
 }
-
-.message_2{
+.message_2 {
     line-height: 30px;
+}
+body {
+    width: 760px;
+    margin: 100px auto;
+}
+.card {
+    box-shadow: 0 0 6px #eeeeee;
+    display: flex;
+}
+.card__img {
+    width: 40%;
+}
+.card__img img {
+    width: 100%;
+    vertical-align: top;
+}
+.card__content {
+    padding: 15px;
+}
+.card__content-ttl {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.card__content-tag {
+    font-size: 14px;
+    display: inline-block;
+}
+.card__content-tag--red {
+    color: red;
+    margin-left: 40px;
 }
 
 /* ここまでがFIrstview の範囲 */
